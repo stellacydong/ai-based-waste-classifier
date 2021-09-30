@@ -37,8 +37,6 @@ Contains list of packages and modules required to run the flask app. Edit only i
 Contains the static images, CSS, & JS files used by the flask app for the webpage. Home.css is for the landing page, Results.css is for the landing page. Place all your images used for your website in static/images/.
 ### templates/ ###
 Contains the HTML pages used for the webpage. Edit these to fit your project. home.html is the landing page, results.html is the result page after uploading the image.
-### yolo/ ###
-Contains info for yolo. Edit yolo.cfg according to the yolov3 darknet instructions. Edit yolo.names according to your labels for your project's objects. **In order to test the flask app locally**, you also need to put your model weights file in this directory and name it as ***yolo.weights***.
 ### Files used for deployment ###
 `Dockerfile`
 `uwsgi.ini`
