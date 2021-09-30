@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Learn Everyday, Join online courses today, Train Your Brain Today!, Learn to enjoyevery minute of your life., Online Learning, Innovations in Online Learning, Education and Learning, 01, 02, 03, 04, Contact Us">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='nicepage.css') }}" media="screen">
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}" media="screen">
+                                                                                      
+<!--     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script> -->
+    
+        <script class="u-script" type="text/javascript" src="{{ url_for('static', filename='jquery.js') }}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{{ url_for('static', filename='nicepage.js') }}" defer=""></script>   
+    
+    <meta name="generator" content="Nicepage 3.25.0, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "images/logo.png"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Home">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body"><header class="u-clearfix u-header u-header" id="sec-85c8"><div class="u-clearfix u-sheet u-sheet-1">
+        <a href="https://ai-camp.org" class="u-image u-logo u-image-1" data-image-width="136" data-image-height="136">
+          <img src="{{ url_for('static', filename='images/logo.png')}}" class="u-logo-image u-logo-image-1">
+        </a>
+      </div></header>
+    <section class="u-clearfix u-image u-shading u-section-1" id="sec-0c92" data-image-width="300" data-image-height="240">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-text u-text-default u-title u-text-1">AI based Waste Classifier<br>
+        </h1>
+        <h2 class="u-subtitle u-text u-text-2">Upload a picture of the item and see if it is recyclable or compostable (organic).&nbsp;<br>
+        </h2>
+<!--         <a href="https://nicepage.com/c/industrial-website-templates" class="u-border-2 u-border-hover-palette-1-base u-border-palette-1-light-3 u-btn u-btn-round u-button-style u-hover-palette-1-base u-none u-radius-50 u-btn-1">upload your picture here</a> -->
+        
+        <!--     button added for uploading a photo    -->
+        <div class="mbr-buttons--left">
+            <div class="mbr-section-btn">
+                <a class="u-border-2 u-border-hover-palette-1-base u-border-palette-1-light-3 u-btn u-btn-round u-button-style u-hover-palette-1-base u-none u-radius-50 u-btn-1" href='#' id='seefood_button'>
+                    <form id='seefood_form' method=post enctype=multipart/form-data>
+                        <input id="seefood_input_field" name="file" type="file" onchange="this.form.submit();" hidden/>
+                    </form>
+                    upload your picture here
+                </a>
+
+            </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="u-clearfix u-gradient u-section-2" id="sec-fab5">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-1">
+                <div class="u-container-layout u-container-layout-1">
+                  <h1 class="u-text u-text-default u-text-1"> Motivations</h1>
+                  <p class="u-text u-text-2"> Waste disposal is often a concern for various reasons including eutrophication, toxic waste consumption by animals and land, air or water pollution. Segregating the waste into organic waste and recyclable waste is a good practice to follow. But, manually performing the task is very cumbersome. Hence, we want to build a machine learning model to automate the classification process.&nbsp;&nbsp;</p>
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+                <div class="u-container-layout u-valign-bottom-lg u-valign-bottom-md u-valign-bottom-sm u-valign-bottom-xs u-container-layout-2">
+                  <img class="u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-1" 
+                       src="{{ url_for('static', filename='images/waste-dispose-properly.jpg')}}" alt="" data-image-width="848" data-image-height="450">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-gradient u-section-3" id="sec-a296">
+      <div class="u-clearfix u-sheet u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-align-left u-container-style u-image u-layout-cell u-left-cell u-shading u-size-30 u-image-1" src="" data-image-width="1000" data-image-height="1080">
+                <div class="u-container-layout u-container-layout-1" src=""></div>
+              </div>
+              <div class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-container-style u-image u-layout-cell u-right-cell u-shading u-size-30 u-image-2" src="" data-image-width="1000" data-image-height="1080">
+                <div class="u-container-layout u-valign-middle u-container-layout-2" src="">
+                  <div class="u-align-center u-container-style u-group u-opacity u-opacity-90 u-white u-group-1">
+                    <div class="u-container-layout u-valign-top-lg u-valign-top-md u-valign-top-sm u-valign-top-xs u-container-layout-3">
+                      <h1 class="u-text u-text-1">Dateset</h1>
+                      <p class="u-text u-text-2">There are 50260 images for 2 classes: recyclable vs. compostable. There are 22,564 recyclable images, and there are 13,966 composable images. Each image has a 64x64 pixel representation with 3 channels for RGB image. This dataset is from&nbsp;<a href="https://www.kaggle.com/techsash/waste-classification-data" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">Kaggle</a>.<br>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-gradient u-section-4" id="sec-c944">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-text u-text-default u-text-1">Artificial Neural Network<br>
+        </h1>
+        <p class="u-text u-text-default u-text-2">
+          <span style="font-size: 1.125rem;">An artificial neural network is a computing system that is inspired by the ways in which human and animal brains work. An artificial neural network has a series of connected nodes that send “synapses” to each other, similar to how the human brain sends synapses to each of the neurons. In our AI camp project, we start with&nbsp;a 2-hidden-layer deep neural network&nbsp;(see Figure on the left below) with&nbsp;sigmoid function as its activation function&nbsp;(see Figure on the right below). The loss function is&nbsp;binary cross-entropy&nbsp;since there are only two classes, and&nbsp;Adam method&nbsp;is used to optimization (minimizing the error).&nbsp;<br>
+            <br>
+            <span style="font-weight: 700;">The&nbsp;training-accuracy&nbsp;for this model is&nbsp;55.22%, while the&nbsp;testing-accuracy&nbsp;is&nbsp;54.98%.&nbsp;</span>
+          </span>
+          <br>
+        </p>
+        <img class="u-image u-image-default u-image-1" 
+             src="{{ url_for('static', filename='images/Red-PandaProjecthomework-GoogleDocs-GoogleChrome8_6_20213_38_35PM.png')}}"
+ alt="" data-image-width="587" data-image-height="282">
+        <img class="u-image u-image-default u-image-2" 
+             src="{{ url_for('static', filename='images/Red-PandaProjecthomework-GoogleDocs-GoogleChrome8_6_20213_37_25PM.png')}}"
+ alt="" data-image-width="423" data-image-height="292">
+      </div>
+    </section>
+    <section class="u-clearfix u-gradient u-section-5" id="sec-5a4d">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-align-center u-text u-text-1" spellcheck="false">Convolutional Neural Network</h1>
+        <p class="u-text u-text-2"><b> Benefits of using CNN</b>
+          <br>1.&nbsp;The main advantage of CNN is that it will automatically detect important features. And thus it’s a good solution for image classification and machine vision.<br>2. CNN is very accurate with how it detects and classifies images looking for certain features.<br>3. ​The CNN algorithm requires significantly less pre-processing than other algorithms for image classification.<br>4. A CNN is capable of successfully capturing the Spatial and Temporal dependencies of an image by applying relevant filters.<br>5. ​One role of CNN is to reduce the images into a simpler form in order to process them more easily without omitting features which are critical for producing an accurate prediction. This is helpful because at extreme dimensions or resolutions, such as 4k (3840 x 2160), the process would be especially computationally intensive for ordinary classification algorithms.
+        </p>
+        <img class="u-image u-image-default u-image-1" 
+             src="{{ url_for('static', filename='images/1_GcI7G-JLAQiEoCON7xFbhg.gif')}}"
+              alt="" data-image-width="500" data-image-height="365">
+        <p class="u-text u-text-3" spellcheck="false">Convolutional Neural Networks take input images, assign weights and biases to different regions or traits of these images after learning from a training data set, and determine to which class from the dataset the input images belong.&nbsp;<br>
+          <br>During training and classification, the input image is convoluted with a kernel/filter to produce a convolved feature. The filter moves to the right with a certain Stride Value until it parses the complete width. It continues by going down to the beginning (left) of the image with the same Stride Value and repeats the process until the entire image is traversed.<br>
+        </p>
+        <p class="u-text u-text-4">We designed our own CNN whose&nbsp;architecture shown below. Unfortunately,<span style="font-weight: 700;"> the test Accuracy of this CNN is&nbsp; 58.0979% which did not improve much from our ANN model above.&nbsp;</span>
+        </p>
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-layout-cell u-size-26 u-layout-cell-1">
+                <div class="u-container-layout u-container-layout-1">
+                  <img class="u-image u-image-default u-image-2" 
+                       src="{{ url_for('static', filename='images/Screenshot2021-08-13184135.png')}}" alt="" data-image-width="944" data-image-height="502">
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-size-17 u-layout-cell-2">
+                <div class="u-container-layout u-valign-middle u-container-layout-2">
+                  <img class="u-image u-image-default u-image-3" 
+                       src="{{ url_for('static', filename='images/a.png')}}"
+                        alt="" data-image-width="386" data-image-height="278">
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-size-17 u-layout-cell-3">
+                <div class="u-container-layout u-valign-middle u-container-layout-3">
+                  <img class="u-expanded-width u-image u-image-default u-image-4"
+                       src="{{ url_for('static', filename='images/a-1.png')}}"
+                        alt="" data-image-width="392" data-image-height="278">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-gradient u-section-6" id="sec-396d">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h1 class="u-text u-text-default u-text-1">Transfer Learning</h1>
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-1">
+                <div class="u-container-layout u-valign-top u-container-layout-1">
+                  <img class="u-image u-image-default u-image-1" 
+                       src="{{ url_for('static', filename='images/ScreenShot2021-09-15at11.22.59PM.png')}}" alt="" data-image-width="952" data-image-height="698">
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+                <div class="u-container-layout u-valign-top u-container-layout-2">
+                  <img class="u-image u-image-default u-image-2" 
+                       src="{{ url_for('static', filename='images/ScreenShot2021-09-15at11.22.59PM.png')}}"
+                       alt="" data-image-width="952" data-image-height="698">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="u-text u-text-2"> In fact, we have tried a few CNN models but they don't improve the results much. Hence, we consider the transfer learning.&nbsp;<br>
+          <br>Transfer Learning is the process of using already existing pre-trained models for other applications by tweaking the last few layers and using it to classify our desired classes. Once trained, these models work astonishingly well as feature detectors for images they weren't trained on. Using a pre-trained network on images not in the training set is called transfer learning. Here we'll use transfer learning to train a network that can classify our organic and recyclable waste photos with near perfect accuracy.<br>
+          <span style="font-weight: 700;">
+            <br>The benefits of using transfer learning (VGG16 and DenseNet121):&nbsp;
+          </span>
+          <br>1. Fast – Normal Convolutional neural networks (ANN and CNN, the first 2 models) will take days or even weeks to train, but you can cut short the process with transfer learning.<br>2. Accurate- Generally, a Transfer learning model performs 20% better than a custom-made model.<br>3. Needs less training data- Being trained on a large dataset, the model can already detect specific features and need less training data to further improve the model.
+        </p>
+      </div>
+    </section>
+    <section class="u-clearfix u-gradient u-section-7" id="sec-9c3e">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-text u-text-1">VGG16 with keras</h1>
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-gutter-0 u-layout">
+            <div class="u-layout-col">
+              <div class="u-size-15">
+                <div class="u-layout-row">
+                  <div class="u-container-style u-layout-cell u-size-60-lg u-size-60-md u-size-60-sm u-size-60-xl u-size-60-xs u-layout-cell-1">
+                    <div class="u-container-layout u-container-layout-1">
+                      <p class="u-text u-text-2">
+                        <span style="font-size: 1.125rem;">VGG16 (also called OxfordNet) is a convolutional neural network architecture named after the Visual Geometry Group from Oxford, who developed it. It was used to win the ILSVRC2014 (Large Scale Visual Recognition Challenge 2014)) competition in 2014. It still considered to be an excellent vision model.VGG-16 is a convolutional neural network that 16 layers deep.&nbsp;<br>
+                          <br>The model loads a set of weights pre-trained on ImageNet.&nbsp;The default input size for VGG16 model is 224 x 224 pixels with 3 channels for RGB image. It has convolution layers of 3x3 filter with a stride 1 and maxpool layer of 2x2 filter of stride 2. It mainly has three parts: convolution, Pooling, and fully connected layers:&nbsp;
+                        </span>
+                        <br>
+                        <br>
+                        <span style="font-size: 1.125rem;">1.&nbsp;<span style="font-weight: 700;">Convolution layer</span>- In this layer, filters are applied to extract features from images. The most important parameters are the size of the kernel and stride.<br>2.&nbsp;<span style="font-weight: 700;">Pooling layer</span>- Its function is to reduce the spatial size to reduce the number of parameters and computation in a network.<br>3.&nbsp;<span style="font-weight: 700;">Fully Connected</span>- These are fully connected connections to the previous layers as in a simple neural network.
+                        </span>
+                        <br>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="u-size-15">
+                <div class="u-layout-row">
+                  <div class="u-align-left u-container-style u-layout-cell u-size-60-lg u-size-60-md u-size-60-sm u-size-60-xl u-size-60-xs u-layout-cell-2">
+                    <div class="u-container-layout u-valign-middle u-container-layout-2">
+                      <img class="u-image u-image-default u-image-1" 
+                           src="{{ url_for('static', filename='images/ScreenShot2021-09-15at11.24.00PM.png')}}"
+                            alt="" data-image-width="1098" data-image-height="650">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="u-size-15">
+                <div class="u-layout-row">
+                  <div class="u-container-style u-layout-cell u-size-60-lg u-size-60-md u-size-60-sm u-size-60-xl u-size-60-xs u-layout-cell-3">
+                    <div class="u-container-layout u-container-layout-3">
+                      <p class="u-text u-text-default u-text-3">
+                        <span style="font-size: 1.125rem;">Notice that VGG16 was trained for 1000 classes. Since we have 2 classes only. we have to modify the model by additional layers as shown in the picture on the left below.&nbsp;<br>
+                          <br>Our modified model was able to classify images properly havin​g accuracy of 97.42% in training dataset. Moreover,<span style="font-weight: 700;"> it achieved an accuracy of 95.65% on validation data and&nbsp;92.35% accuracy on test accuracy.&nbsp; </span>
+                        </span>
+                        <br>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="u-size-15">
+                <div class="u-layout-row">
+                  <div class="u-container-style u-layout-cell u-size-60 u-layout-cell-4">
+                    <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-container-layout-4">
+                      <img class="u-image u-image-default u-image-2" 
+                           src="{{ url_for('static', filename='images/ScreenShot2021-08-19at1.50.21AM.png')}}"
+                           alt="" data-image-width="1134" data-image-height="1080">
+                      <img class="u-image u-image-default u-image-3" 
+                           src="{{ url_for('static', filename='images/a1.png')}}"
+ alt="" data-image-width="488" data-image-height="285">
+                      <img class="u-image u-image-default u-image-4" 
+                           src="{{ url_for('static', filename='images/a-11.png')}}"
+                        alt="" data-image-width="488" data-image-height="285">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-gradient u-section-8" id="sec-6ae8">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-text u-text-default u-text-1"> DenseNet121 with PyTorch</h1>
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-gutter-0 u-layout">
+            <div class="u-layout-col">
+              <div class="u-size-15">
+                <div class="u-layout-row">
+                  <div class="u-container-style u-layout-cell u-size-30-md u-size-60-lg u-size-60-sm u-size-60-xl u-size-60-xs u-layout-cell-1">
+                    <div class="u-container-layout u-container-layout-1">
+                      <p class="u-text u-text-2">
+                        <span style="font-size: 1.125rem;">DenseNet is a convolutional neural network. It is made to be where each layer in the neural network is connected to all other layers that are deeper in the network, that is, the first layer is connected to the 2nd, 3rd, 4th and so on, the second layer is connected to the 3rd, 4th, 5th and so on. There are different ways that neural network layers can be connected, which is why DenseNet is special because it substantially reduces the number of parameters and alleviates the vanishing-gradient problem.<br>
+                          <br>Densenet was built with PyTorch because of PyTorch's ease of use and applications in numerous fields of machine learning. In simple terms, PyTorch is basically a python framework that allows tensor computation with strong GPU acceleration for constructing deep neural networks. It provides flexibility and stability for deep learning.
+                        </span>
+                        <br>
+                      </p>
+                      <img class="u-image u-image-default u-image-1" 
+                           src="{{ url_for('static', filename='images/image.jpeg')}}" alt="" data-image-width="642" data-image-height="610">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="u-size-15">
+                <div class="u-layout-row">
+                  <div class="u-align-left u-container-style u-layout-cell u-size-30-md u-size-60-lg u-size-60-sm u-size-60-xl u-size-60-xs u-layout-cell-2">
+                    <div class="u-container-layout u-valign-top-lg u-valign-top-md u-valign-top-sm u-valign-top-xs u-container-layout-2">
+                      <p class="u-text u-text-default u-text-3">
+                        <span style="font-size: 1.125rem;">The architecture of original DenseNet-121 was shown as the Figure above:&nbsp;<br>1. CP = convolution layer + pooling layer.&nbsp;<br>2. D = dense layer&nbsp;<br>3. T = transition layer (prevents gradient vanishing problems). A transition layer is used to control the complexity of the model. It reduces the number of channels by using the 1×1 convolutional layer and halves the height and width of the average pooling layer with a stride of 2, further reducing the complexity of the model.<br>4. GAP = global average pooling layer<br>5. FCL = fully connected layer&nbsp;<br>
+                          <br>Notice that <span style="font-weight: 700;">the difference between DenseNet and VGG is that DenseNet has one additional layer, “Transition layer” which prevents the gradient vanishing problems and reduces the complexity of the algorithm.&nbsp;</span>
+                        </span>
+                        <br>
+                      </p>
+                      <img class="u-image u-image-default u-image-2" 
+                           src="{{ url_for('static', filename='images/image.jpeg')}}"
+                           alt="" data-image-width="642" data-image-height="610">
+                      <p class="u-text u-text-4">
+                        <span style="font-size: 1.125rem;">Notice that DenseNet121 was trained for 1000 classes as well. Since we have 2 classes only. we have to modify the model too. See Figure above.&nbsp;&nbsp;Our modified model was able to classify images properly having accuracy of 97.42% in training dataset. Moreover, <span style="font-weight: 700;">it achieved an accuracy of&nbsp; 93% accuracy on test accuracy.&nbsp; </span>
+                        </span>
+                        <br>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="u-size-15">
+                <div class="u-layout-row">
+                  <div class="u-container-style u-layout-cell u-size-30-lg u-size-30-md u-size-30-xl u-size-60-sm u-size-60-xs u-layout-cell-3">
+                    <div class="u-container-layout u-valign-top u-container-layout-3">
+                      <img class="u-image u-image-default u-image-3" 
+                           src="{{ url_for('static', filename='images/a2.png')}}"
+               alt="" data-image-width="829" data-image-height="613">
+                    </div>
+                  </div>
+                  <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-4">
+                    <div class="u-container-layout u-valign-top u-container-layout-4">
+                      <img class="u-image u-image-default u-image-4" 
+                           src="{{ url_for('static', filename='images/a-12.png')}}"
+                         alt="" data-image-width="811" data-image-height="596">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="u-size-15">
+                <div class="u-layout-row">
+                  <div class="u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xs u-container-style u-layout-cell u-size-30-md u-size-60-lg u-size-60-sm u-size-60-xl u-size-60-xs u-layout-cell-5">
+                    <div class="u-container-layout u-valign-top u-container-layout-5">
+                      <img class="u-image u-image-default u-image-5" 
+                           src="{{ url_for('static', filename='images/ScreenShot2021-09-16at12.21.05AM.png')}}"
+                           alt="" data-image-width="1156" data-image-height="364">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-gradient u-section-9" id="sec-815c">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-text u-text-default u-text-1">Our Team</h1>
+        <div class="u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-align-center u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1">
+                <div alt="" class="u-image u-image-circle u-image-1" src="" data-image-width="909" data-image-height="1080"></div>
+                <h5 class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-2">Chloe Meuse </h5>
+                <p class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-3">Machine Learning Engineer/Web Designer </p>
+                <p class="u-text u-text-4">Chloe is 17 years old and is from California. She attend The Taft School, a boarding school in Connecticut. Along with coding she plays lacrosse, field hockey and skis.&nbsp;<br>
+                </p>
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-2">
+                <div alt="" class="u-image u-image-circle u-image-2" src="" data-image-width="660" data-image-height="880"></div>
+                <h5 class="u-text u-text-5">Nathan Kong</h5>
+                <p class="u-text u-text-6">creative leader<br>
+                </p>
+                <p class="u-text u-text-7">Nathan is a 17 year old from San Jose, California. He currently goes to Valley Christian High School. His favorite hobbies besides from coding are golf and pc gaming.&nbsp;<br>
+                </p>
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3">
+                <div alt="" class="u-image u-image-circle u-image-3" src="" data-image-width="951" data-image-height="1077"></div>
+                <h5 class="u-text u-text-8">Subha Vadlamannati<br>
+                </h5>
+                <p class="u-text u-text-9">Machine Learning Engineer/Web Development Team </p>
+                <p class="u-text u-text-10">Subha is a 15 year old from Mercer Island, Washington and goes to Mercer Island High School. Outside of working on matchine learning, she likes math, data science, piano, and linguistics.<br>
+                </p>
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-4">
+                <div alt="" class="u-image u-image-circle u-image-4" src="" data-image-width="846" data-image-height="1080"></div>
+                <h5 class="u-text u-text-11">Ali Mahmood<br>
+                </h5>
+                <p class="u-text u-text-12">Programmer</p>
+                <p class="u-text u-text-13">Ali has lived in Virginia for most of his life. He will be attending George Mason University next year. His interests outside of work are sports, reading, and traveling.​Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-5">
+                <div alt="" class="u-image u-image-circle u-image-5" src="" data-image-width="465" data-image-height="571"></div>
+                <h5 class="u-text u-text-14">Sanjay Vijay<br>
+                </h5>
+                <p class="u-text u-text-15">Programming guru</p>
+                <p class="u-text u-text-16">Sanjay has lived in Massachusetts for most of his life. Currently attending Westford Academy, his interests are math and computer science. Playing chess and writing music are other hobbies of his.​Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-6">
+                <div alt="" class="u-image u-image-circle u-image-6" src="" data-image-width="600" data-image-height="600"></div>
+                <h5 class="u-text u-text-17">Stella Dong</h5>
+                <p class="u-text u-text-18">Instructor</p>
+                <p class="u-text u-text-19">Stella enjoys teaching and inspiring the next generation of our STEM pioneers. When she is not teaching, she spends time with her 3 cats and 1 dog!<br>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+ 
+
+            <section>
+
+    
+      <div class="u-clearfix u-expanded-width u-grey-10 u-gutter-30 u-layout-wrap u-layout-wrap-1">
+        
+                  <h2 class="u-align-center u-text u-text-1">
+                    <a href="https://www.ai-camp.org" class="u-btn u-button-style u-none u-text-palette-4-base u-btn-1">AI Camp</a> teaches AI to middle and high school students.
+                  </h2>
+        
+                  <p class="u-align-center u-text u-text-2">We make cool AI products in just three weeks!
+                    <br><br>
+         
+         <a href="https://www.ai-camp.org" class="u-btn u-button-style u-palette-4-dark-1 u-btn-1 u-align-center" target="_blank"> Learn AI at AI Camp</a> </p>
+                </div>
+    </section>
+    
+
+   <!--     javascript added for uploading a photo    -->
+    <script>
+        // added to get upload with a button working
+        document.getElementById('seefood_button').addEventListener('click', openDialog);
+
+        function openDialog() {
+            document.getElementById('seefood_input_field').click();
+        }
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#spinner").bind("ajaxSend", function() {
+                $(this).show();
+            }).bind("ajaxStop", function() {
+                $(this).hide();
+            }).bind("ajaxError", function() {
+                $(this).hide();
+            });
+            // seefood_input_field
+            $('#seefood_button').click(function() {
+
+            });
+
+        });
+    </script>
+    
+    
+    
+  </body>
+</html>
